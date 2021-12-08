@@ -17,5 +17,9 @@ class Hall extends Model
         'price_regular',
     ];
 
+    public function session() {
+        return $this->hasMany(Session::class);
+    }
+
     public $timestamps = false;
 }

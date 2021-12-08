@@ -17,8 +17,8 @@ class CreateSessionsTable extends Migration
             $table->id();
             $table->foreignId('movie_id')->constrained();
             $table->foreignId('hall_id')->constrained();
-            $table->integer('hours');
-            $table->integer('minutes');
+            $table->string('hours');
+            $table->string('minutes');
         });
     }
 

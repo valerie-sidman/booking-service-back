@@ -27,6 +27,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::get('/halls', [HallController::class,'index']);
 Route::post('/halls', [HallController::class,'store']);
+Route::get('/halls/sessions', [HallController::class,'getWithSession']);
 Route::get('/halls/{id}', [HallController::class,'getById']);
 Route::put('/halls/{id}', [HallController::class,'update']);
 Route::delete('/halls/{id}', [HallController::class,'destroy']);

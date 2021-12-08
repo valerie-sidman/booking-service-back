@@ -22,6 +22,11 @@ class HallController extends Controller
         return Hall::find($id);
     }
 
+    public function getWithSession()
+    {
+        return Hall::with('session.movie')->get();
+    }
+
     public function update($id, Request $request)
     {
         $hallForUpdate = Hall::find($id);

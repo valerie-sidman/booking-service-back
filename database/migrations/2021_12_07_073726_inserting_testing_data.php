@@ -183,8 +183,14 @@ class InsertingTestingData extends Migration
                 array(
                     'movie_id' => 1,
                     'hall_id' => 1,
-                    'hours' => 12,
-                    'minutes' => 30,
+                    'hours' => '12',
+                    'minutes' => '00',
+                ),
+                array(
+                    'movie_id' => 2,
+                    'hall_id' => 1,
+                    'hours' => '21',
+                    'minutes' => '00',
                 )
             )
         );

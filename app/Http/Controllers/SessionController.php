@@ -9,7 +9,7 @@ class SessionController extends Controller
 {
     public function index()
     {
-        return Session::all();
+        return Session::with('hall', 'movie')->get();
     }
 
     public function store(Request $request)
