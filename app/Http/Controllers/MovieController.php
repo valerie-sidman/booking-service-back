@@ -14,8 +14,7 @@ class MovieController extends Controller
 
     public function store(Request $request)
     {
-        $movies = $request->movies;
-        return Movie::insert($movies);
+        return Movie::create($request->all());
     }
 
     public function getById($id)
