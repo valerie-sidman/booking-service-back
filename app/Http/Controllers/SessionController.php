@@ -14,8 +14,7 @@ class SessionController extends Controller
 
     public function store(Request $request)
     {
-        $sessions = $request->sessions;
-        return Session::insert($sessions);
+        return Session::create($request->all());
     }
 
     public function getById($id)
