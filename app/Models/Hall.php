@@ -15,6 +15,7 @@ class Hall extends Model
         'num_of_seats',
         'price_vip',
         'price_regular',
+        'open'
     ];
 
     public function session() {

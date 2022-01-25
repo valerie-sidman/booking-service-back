@@ -20,6 +20,7 @@ class CreateHallsTable extends Migration
             $table->integer('num_of_seats')->nullable();
             $table->integer('price_vip')->nullable();
             $table->integer('price_regular')->nullable();
+            $table->boolean('open')->nullable();
         });
     }
 
