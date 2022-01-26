@@ -23,6 +23,7 @@ class InsertingTestingData extends Migration
                     'num_of_seats' => '2',
                     'price_vip' => 0,
                     'price_regular' => 50,
+                    'open' => false,
                 ),
                 array(
                     'name' => 'Зал 2',
@@ -30,6 +31,7 @@ class InsertingTestingData extends Migration
                     'num_of_seats' => '4',
                     'price_vip' => 200,
                     'price_regular' => 100,
+                    'open' => true,
                 )
             )
         );
