@@ -16,5 +16,9 @@ class Movie extends Model
         'production_country',
     ];
 
+    public function hall() {
+        return $this->belongsToMany('App\Models\Hall', 'sessions', 'movie_id', 'hall_id');
+    }
+
     public $timestamps = false;
 }

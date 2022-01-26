@@ -12,6 +12,11 @@ class MovieController extends Controller
         return Movie::all();
     }
 
+    public function getWithHalls()
+    {
+        return Movie::with('hall')->get();
+    }
+
     public function store(Request $request)
     {
         return Movie::create($request->all());

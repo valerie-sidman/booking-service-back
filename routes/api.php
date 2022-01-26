@@ -42,6 +42,7 @@ Route::put('/seats/{id}', [SeatController::class,'update']);
 Route::delete('/seats/{id}', [SeatController::class,'destroy']);
 
 Route::get('/movies', [MovieController::class,'index']);
+Route::get('/movies/halls', [MovieController::class,'getWithHalls']);
 Route::post('/movies', [MovieController::class,'store']);
 Route::get('/movies/{id}', [MovieController::class,'getById']);
 Route::put('/movies/{id}', [MovieController::class,'update']);
