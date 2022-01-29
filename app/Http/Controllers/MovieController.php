@@ -14,7 +14,13 @@ class MovieController extends Controller
 
     public function getWithHalls()
     {
-        return Movie::with('hall')->get();
+        $movies = Movie::with('hall')->get();
+        collect($movies)->map(function ($movie) {
+            collect($movie->hall) ->map(function ($hall) use ($movie) {
+                $hall->session = $movie->id;
+            });
+        });
+        return $movies;
     }
 
     public function store(Request $request)

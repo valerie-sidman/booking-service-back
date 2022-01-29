@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\DB;
 
 class Hall extends Model
 {
@@ -20,6 +21,13 @@ class Hall extends Model
 
     public function session() {
         return $this->hasMany(Session::class);
+    }
+
+    public function getSessionAttribute($value) {
+        return DB::table('sessions')
+            ->where('movie_id', '=', $value)
+            ->where('hall_id', '=', $this->id)
+            ->get();
     }
 
     public $timestamps = false;

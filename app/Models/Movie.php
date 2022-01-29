@@ -17,7 +17,9 @@ class Movie extends Model
     ];
 
     public function hall() {
-        return $this->belongsToMany('App\Models\Hall', 'sessions', 'movie_id', 'hall_id');
+        return $this->belongsToMany('App\Models\Hall', 'sessions', 'movie_id', 'hall_id')
+            ->groupBy('hall_id', 'movie_id')
+            ->where('open', '=', '1');
     }
 
     public $timestamps = false;
