@@ -23,7 +23,7 @@ class InsertingTestingData extends Migration
                     'num_of_seats' => '2',
                     'price_vip' => 0,
                     'price_regular' => 50,
-                    'open' => false,
+                    'open' => true,
                 ),
                 array(
                     'name' => 'Зал 2',
@@ -170,12 +170,14 @@ class InsertingTestingData extends Migration
                     'description' => 'Жила-была хорошая добрая девушка Настенька. Злая мачеха заставляла ее работать, не давая продыху. Однажды она решила избавиться от падчерицы и отправила ту замерзать в зимний лес. В этих же краях жил паренек Иван. Он полюбил Настеньку, да вот только был он большим хвастуном, потому лесной колдун и превратил его в медведя. И Настеньке, и Ивану пришлось пройти через много испытаний, прежде чем соединить свои судьбы. И помог им в этом добрый волшебник — дедушка Морозко...',
                     'duration' => 84,
                     'production_country' => 'СССР',
+                    'img_url' => 'https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/e67bcfa7-b247-44c3-a0b5-2c6b02da4976/300x450'
                 ),
                 array(
                     'name' => 'Василиса Прекрасная',
                     'description' => 'Задумал отец женить трех своих сыновей. Вышли братья в чистое поле и пустили стрелы в разные стороны. Стрела старшего сына упала на боярский двор, к боярской дочери, стрела среднего сына — упала на двор купеческой, а стрела Ивана, младшего сына упала на болото к лягушке-квакушке...',
                     'duration' => 74,
                     'production_country' => 'СССР',
+                    'img_url' => 'https://avatars.mds.yandex.net/get-kinopoisk-image/1946459/50cd804e-2ae6-4207-80fe-a4a6b4615353/300x450'
                 ),
 
             )
@@ -185,14 +187,50 @@ class InsertingTestingData extends Migration
                 array(
                     'movie_id' => 1,
                     'hall_id' => 1,
-                    'hours' => '12',
-                    'minutes' => '00',
+                    'hours' => '08',
+                    'minutes' => '30',
                 ),
                 array(
                     'movie_id' => 2,
                     'hall_id' => 1,
                     'hours' => '21',
                     'minutes' => '00',
+                ),
+                array(
+                    'movie_id' => 1,
+                    'hall_id' => 2,
+                    'hours' => '09',
+                    'minutes' => '00',
+                ),
+                array(
+                    'movie_id' => 2,
+                    'hall_id' => 2,
+                    'hours' => '18',
+                    'minutes' => '00',
+                ),
+                array(
+                    'movie_id' => 1,
+                    'hall_id' => 1,
+                    'hours' => '12',
+                    'minutes' => '00',
+                ),
+                array(
+                    'movie_id' => 2,
+                    'hall_id' => 1,
+                    'hours' => '12',
+                    'minutes' => '30',
+                ),
+                array(
+                    'movie_id' => 1,
+                    'hall_id' => 2,
+                    'hours' => '16',
+                    'minutes' => '30',
+                ),
+                array(
+                    'movie_id' => 2,
+                    'hall_id' => 2,
+                    'hours' => '19',
+                    'minutes' => '30',
                 )
             )
         );

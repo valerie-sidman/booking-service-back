@@ -19,6 +19,7 @@ class CreateMoviesTable extends Migration
             $table->string('description');
             $table->integer('duration');
             $table->string('production_country');
+            $table->string('img_url');
         });
     }
 

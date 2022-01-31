@@ -27,6 +27,8 @@ class Hall extends Model
         return DB::table('sessions')
             ->where('movie_id', '=', $value)
             ->where('hall_id', '=', $this->id)
+            ->orderBy('hours')
+            ->orderBy('minutes')
             ->get();
     }
 

@@ -14,6 +14,7 @@ class Movie extends Model
         'description',
         'duration',
         'production_country',
+        'img_url'
     ];
 
     public function hall() {
