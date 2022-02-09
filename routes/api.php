@@ -50,7 +50,6 @@ Route::delete('/movies/{id}', [MovieController::class,'destroy']);
 
 Route::get('/ticket', [TicketController::class,'index']);
 Route::post('/ticket', [TicketController::class,'store']);
-Route::get('/ticket/qr', [TicketController::class,'qrGenerate']);
 Route::get('/ticket/{id}', [TicketController::class,'getById']);
 Route::put('/ticket/{id}', [TicketController::class,'update']);
 Route::delete('/ticket/{id}', [TicketController::class,'destroy']);
