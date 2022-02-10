@@ -23,9 +23,5 @@ php artisan migrate:refresh --database=sqlite_migrate
 ```
 php artisan serve
 ```
-## Данные для авторизации администратора
-**login** - admin
-
-**password** - 12345
 ## Версия PHP
 ***PHP 8.0.3 (cli)***
